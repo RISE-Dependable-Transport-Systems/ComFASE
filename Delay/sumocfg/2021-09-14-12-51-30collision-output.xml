@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-09-14 12:51:30 by Eclipse SUMO GUI Version 1.9.2
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="./sumocfg/freeway.net.xml"/>
+        <route-files value="./sumocfg/freeway.rou.xml"/>
+    </input>
+
+    <output>
+        <output-prefix value="TIME"/>
+        <fcd-output value="./sumocfg/fcd-output.xml"/>
+        <fcd-output.signals value="true"/>
+        <fcd-output.distance value="true"/>
+        <fcd-output.acceleration value="true"/>
+        <collision-output value="./sumocfg/collision-output.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="81600"/>
+        <step-length value="0.01"/>
+    </time>
+
+    <processing>
+        <step-method.ballistic value="true"/>
+        <collision.action value="warn"/>
+    </processing>
+
+    <traci_server>
+        <remote-port value="55123"/>
+    </traci_server>
+
+    <random_number>
+        <seed value="0"/>
+    </random_number>
+
+    <gui_only>
+        <gui-settings-file value="./sumocfg/freeway.gui.xml"/>
+        <start value="true"/>
+        <tracker-interval value="0.01"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<collisions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/collision_file.xsd">
+</collisions>
