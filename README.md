@@ -17,6 +17,12 @@ ComFASE composed of [OMNeT++](https://omnetpp.org/), [Veins](https://veins.car2x
 
 ## Result Analyze
 
+|                       |                 Definition                     |
+| ----------------------| ---------------------------------------------- |
+| *std_output*          | Piped STDOUT from the tested application       |
+| *llfi_stat_output*    | Fault injection statistics                     |
+| *error_output*        | Failure reports (program crashes, hangs, etc.) |
+| *trace_report_output* | Faults propogation report files and graph      |
 ## License
 
 ## Papers
