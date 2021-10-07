@@ -39,6 +39,11 @@ and
             @display("p=120,50;i=abstract/penguin");
         }
 ```
+3. in your **ini** file call attackInjection.ini by adding:
+´´´
+include /opt/sim/Dev/FAISL-Ex/veins/src/veins/attackInjection/attackInjection.ini
+´´´
+
 ## Running
 
 ## Result Analyze
