@@ -25,7 +25,7 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 | *OMNeT++*             | is a modular, component-based C++ simulation library and framework|
 | *Veins*               | is a framework for running vehicular network simulations          |
 | *Plexe*               | is a cooperative driving framework extending SUMO and Veins permitting the realistic simulation of platooning|
-| *SUMO*                | is microscopic traffic simulator                                  |
+| *SUMO*                | is a microscopic traffic simulator                                  |
 
 ### Integrating ComFASE into the Simulators
 1. Copy the **attackInjection** folder into the veins/src/veins directory.
