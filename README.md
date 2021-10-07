@@ -20,12 +20,12 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 * [SUMO 1.8.0](https://sourceforge.net/projects/sumo/files/sumo/version%201.8.0/)
 
 
-|       Simulator       |                 Definition                     |
-| ----------------------| ---------------------------------------------- |
-| *OMNeT++*             | Network simulator                              |
-| *Veins*               | Vehicular in networks                          |
-| *Plexe*               | Platooning scenarios                           |
-| *SUMO*                | Traffic simulator                              |
+|       Simulator       |                                 Definition                        |
+| ----------------------| ----------------------------------------------------------------- |
+| *OMNeT++*             | is a modular, component-based C++ simulation library and framework|
+| *Veins*               | is a framework for running vehicular network simulations          |
+| *Plexe*               | s a cooperative driving framework extending SUMO and Veins permitting the realistic simulation of platooning|
+| *SUMO*                | Traffic simulator                                                 |
 
 ### Integrating ComFASE into the Simulators
 1. Copy the **attackInjection** folder into the veins/src/veins directory.
