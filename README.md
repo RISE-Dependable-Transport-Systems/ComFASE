@@ -10,13 +10,21 @@
 
 
 ## Installation
+Before integrating ComFASE into the simulator, it is recommended to have all the simulators running on your system. You can follow the instructions on the OMNeT++, Veins, and Plexe webpages to install them and have them ready to run. Note: ComFASE is tested in the below-mentioned versions of the simulators:
 
-|           Tool        |                 Definition                     |
+* [OMNeT++ 5.6.2](https://omnetpp.org/software/2020/01/13/omnet-5-6-released)
+* [Veins 5.1](https://github.com/sommer/veins/releases/tag/veins-5.1)
+* [Plexe 3.0a3](https://github.com/michele-segata/plexe/releases/tag/plexe-3.0a3)
+* [SUMO 1.8.0](https://sourceforge.net/projects/sumo/files/sumo/version%201.8.0/)
+* 
+|       Simulator       |                 Definition                     |
 | ----------------------| ---------------------------------------------- |
 | *OMNeT++*             | Network simulator                              |
 | *Veins*               | Vehicular in networks                          |
 | *Plexe*               | Platooning scenarios                           |
 | *SUMO*                | Traffic simulator                              |
+
+
 ## Running
 
 ## Result Analyze
