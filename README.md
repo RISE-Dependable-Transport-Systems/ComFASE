@@ -29,7 +29,16 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 
 # Integrating ComFASE into the Simulators
 1. Copy the **attackInjection** folder into the veins/src/veins directory.
-2. 
+2. Update **ned** file of the example that you want to run by adding: 
+``` 
+import org.car2x.veins.attackInjection.Injector;
+```
+and 
+```
+        attacker: Injector {
+            @display("p=120,50;i=abstract/penguin");
+        }
+```
 ## Running
 
 ## Result Analyze
