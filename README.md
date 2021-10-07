@@ -1,6 +1,5 @@
 ## ComFASE
-
-ComFASE composed of [OMNeT++](https://omnetpp.org/), [Veins](https://veins.car2x.org/), [Plexe](https://plexe.car2x.org/tutorial/), [SUMO](https://www.eclipse.org/sumo/) and [Python](https://www.python.org/).
+ ComFASE is a  communication fault  and  attack  simulation  engine  that  allows  to  evaluate the behavior of interconnected automated vehicles in the presence of faults and attacks. ComFASE is a simulation-based fault and attack injection tool, it is composed of [OMNeT++](https://omnetpp.org/), [Veins](https://veins.car2x.org/), [Plexe](https://plexe.car2x.org/tutorial/), [SUMO](https://www.eclipse.org/sumo/) and [Python](https://www.python.org/).
 
 <p align="center">
   <br><br>
