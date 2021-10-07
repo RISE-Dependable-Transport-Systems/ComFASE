@@ -29,7 +29,25 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 
 ### Integrating ComFASE into the Simulators
 1. Copy the **attackInjection** folder into the veins/src/veins directory.
-2. Update **ned** file of the example that you want to run by adding: 
+2. Using **injector** in the code
+```
+auto Injection = FindModule<Injector*>::findGlobalModule();
+    if (Injection->attackActive){
+        std::cout<<"AttackActive = is TRUE"<<std::endl;
+        //return myPDValue;
+        //cPacket *omsg = msg->dup();
+        float correctValue = receiverPos.distance(senderPos2) / BaseWorldUtility::speedOfLight();
+        return Injection->AttackInjectionEngine(senderModule->getId(), receiverModule->getId(), correctValue);
+        //return Injection->DenialOfServiceAttack(senderModule->getId(), receiverModule->getId(), correctValue);
+        //return Injection->PropagationDelayAttack(senderModule->getId(), receiverModule->getId(), correctValue);
+        //Injection.PropagationDelayAttack(senderModule->getId(), receiverModule->getId(), correctValue);
+    }
+    else{
+    // this time-point is used to calculate the distance between sending and receiving host
+        return receiverPos.distance(senderPos2) / BaseWorldUtility::speedOfLight();
+    }
+```
+3. Update **ned** file of the example that you want to run by adding: 
 ``` 
 import org.car2x.veins.attackInjection.Injector;
 ```
@@ -39,12 +57,12 @@ and
             @display("p=120,50;i=abstract/penguin");
         }
 ```
-3. in your **ini** file call "attackInjection.ini" by adding:
+4. in your **ini** file call "attackInjection.ini" by adding:
 ```
 include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 ```
 
-4. Compile the code to make it ready to run (build all projects in OMNeT++ IDE)
+5. Compile the code to make it ready to run (build all projects in OMNeT++ IDE)
 ## Running
 
 ## Result Analyze
