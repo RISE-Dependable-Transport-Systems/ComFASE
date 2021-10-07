@@ -44,6 +44,7 @@ and
 include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 ```
 
+4. Compile the code to make it ready to run (build all projects in OMNeT++ IDE)
 ## Running
 
 ## Result Analyze
