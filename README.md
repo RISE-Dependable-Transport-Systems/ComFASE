@@ -27,7 +27,7 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 | *Plexe*               | Platooning scenarios                           |
 | *SUMO*                | Traffic simulator                              |
 
-# Integrating ComFASE into the Simulators
+### Integrating ComFASE into the Simulators
 1. Copy the **attackInjection** folder into the veins/src/veins directory.
 2. Update **ned** file of the example that you want to run by adding: 
 ``` 
