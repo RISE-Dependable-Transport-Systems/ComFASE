@@ -12,7 +12,7 @@
 ## Installation
 Before integrating ComFASE into the simulator, it is recommended to have all the simulators running on your system. You can follow the instructions on the OMNeT++, Veins, and Plexe webpages to install them and have them ready to run. 
 
-Note: ComFASE is tested in the below-listed versions of the simulators:
+Note: ComFASE is tested in the below-mentioned versions of the simulators:
 
 * [OMNeT++ 5.6.2](https://omnetpp.org/software/2020/01/13/omnet-5-6-released)
 * [Veins 5.1](https://github.com/sommer/veins/releases/tag/veins-5.1)
@@ -33,7 +33,7 @@ Note: ComFASE is tested in the below-listed versions of the simulators:
 ```
 #include "veins/attackInjection/Injector.h"
 ```
-for Delay and DoS attacks the following lines are added into the "channelAccess.cc" in source code of Veins
+for **Delay** and **DoS** attacks the following lines are added into the "channelAccess.cc" in source code of the Veins
 ```
 auto Injection = FindModule<Injector*>::findGlobalModule();
     if (Injection->attackActive){
