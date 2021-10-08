@@ -67,7 +67,7 @@ A Python script is whritten to run the ComFASE experiments, before running that 
 ```
 Node=27  		     # NODE/VEHICLE UNDER ATTACK
 Activation='true'	     # BOOLEAN FOR ATTACK ACTIVATION
-Delay='true'	            # BOOLEAN FOR DELAY
+Delay='true'	             # BOOLEAN FOR DELAY
 Sender='true'   	     # BOOLEAN FOR TARGET SURFACE FOR SENDER
 Receiver='true' 	     # BOOLEAN FOR TARGET SURFACE FOR RECEIVER
 for t in numpy.arange(17.0, 21.9, 0.2):  # This loop defines the target time to inject attack
