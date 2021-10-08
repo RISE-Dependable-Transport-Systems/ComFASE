@@ -63,7 +63,7 @@ include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 
 5. Compile the code to make it ready to run (build all projects in OMNeT++ IDE)
 ## Running
-A Python script is whritten to run the ComFASE experiments, before running that you can define your attack injection setup such as target node (target vehicle), attack type (Delay or DoS), and target attack surface (sender, receiver or both):
+A Python script is written to run the ComFASE experiments, before running that you can define your attack injection setup such as target node (target vehicle), attack type (Delay or DoS), and target attack surface (sender, receiver or both):
 ```
 Node=27  		     # NODE/VEHICLE UNDER ATTACK
 Activation='true'	     # BOOLEAN FOR ATTACK ACTIVATION
