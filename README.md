@@ -12,7 +12,7 @@
 ## Installation
 Before integrating ComFASE into the simulator, it is recommended to have all the simulators running on your system. You can follow the instructions on the OMNeT++, Veins, and Plexe webpages to install them and have them ready to run. 
 
-Note: ComFASE is tested in the below-mentioned versions of the simulators:
+Note: ComFASE is tested in the below-listed versions of the simulators:
 
 * [OMNeT++ 5.6.2](https://omnetpp.org/software/2020/01/13/omnet-5-6-released)
 * [Veins 5.1](https://github.com/sommer/veins/releases/tag/veins-5.1)
@@ -28,19 +28,18 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 | *SUMO*                | is a microscopic traffic simulator                                  |
 
 ### Integrating ComFASE into the Simulators
-1. Copy the **attackInjection** folder into the veins/src/veins directory.
-2. Using **injector** in the code
+1. Copy the **attackInjection** folder into the "veins/src/veins" directory.
+2. To use the **injector** in the desired part of the code, you can use the below code to call it 
+```
+#include "veins/attackInjection/Injector.h"
+```
+for Delay and DoS attacks the following lines are added into the "channelAccess.cc" in source code of Veins
 ```
 auto Injection = FindModule<Injector*>::findGlobalModule();
     if (Injection->attackActive){
         std::cout<<"AttackActive = is TRUE"<<std::endl;
-        //return myPDValue;
-        //cPacket *omsg = msg->dup();
         float correctValue = receiverPos.distance(senderPos2) / BaseWorldUtility::speedOfLight();
         return Injection->AttackInjectionEngine(senderModule->getId(), receiverModule->getId(), correctValue);
-        //return Injection->DenialOfServiceAttack(senderModule->getId(), receiverModule->getId(), correctValue);
-        //return Injection->PropagationDelayAttack(senderModule->getId(), receiverModule->getId(), correctValue);
-        //Injection.PropagationDelayAttack(senderModule->getId(), receiverModule->getId(), correctValue);
     }
     else{
     // this time-point is used to calculate the distance between sending and receiving host
