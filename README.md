@@ -65,8 +65,8 @@ include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 ## Running
 A Python script is whritten to run the ComFASE experiments, before running that you can define your attack injection setup such as target node (target vehicle), attack type (Delay or DoS), and target attack surface (sender, receiver or both):
 ```
-Node=27  		         # NODE/VEHICLE UNDER ATTACK
-Activation='true'	     # BOOLEAN FOR ATTACK ACTIVATION
+Node=27  		           # NODE/VEHICLE UNDER ATTACK
+Activation='true'	    # BOOLEAN FOR ATTACK ACTIVATION
 Delay='true'	         # BOOLEAN FOR DELAY
 Sender='true'   	     # BOOLEAN FOR TARGET SURFACE FOR SENDER
 Receiver='true' 	     # BOOLEAN FOR TARGET SURFACE FOR RECEIVER
