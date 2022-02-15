@@ -61,7 +61,7 @@ include <path to comfase>/comfase/src/comfase/attackInjection/attackInjection.in
 
 9. Compile the code to make it ready to run (build all projects in OMNeT++ IDE)
  
-## Build ComFASE trough command line
+## Build ComFASE through the command line
 After making any changes to the code in the OMNet++ IDE and successfully running an example, follow the following steps to run it automatically via a Python script:
 1. Build each of the 3 projects (ComFase, Veins, Plexe) separately in their directory with this command;
 ```
