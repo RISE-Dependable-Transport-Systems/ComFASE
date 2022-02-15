@@ -25,6 +25,41 @@ git clone ...
 <br/> 
 <br/>  
 
+6. To use the **injector** in the desired part of the code, you can use the below code to call it 
+```
+#include "/opt/sim/Dev2/comfase/src/comfase/attackInjection/Injector.h""
+```
+Note: this path could be different depending on your directory.
+
+for **Delay** and **DoS** attacks the following lines are added into the "channelAccess.cc" in source code of the Veins
+```
+auto Injection = FindModule<Injector*>::findGlobalModule();
+    if (Injection->attackActive){
+        std::cout<<"AttackActive = is TRUE"<<std::endl;
+        float correctValue = receiverPos.distance(senderPos) / BaseWorldUtility::speedOfLight();
+        return Injection->AttackInjectionEngine(senderModule->getId(), receiverModule->getId(), correctValue);
+    }
+    else{
+    // this time-point is used to calculate the distance between sending and receiving host
+        return receiverPos.distance(senderPos) / BaseWorldUtility::speedOfLight();
+    }
+```
+3. Update **ned** file of the example that you want to run by adding: 
+``` 
+import comfase.comfase.attackInjection.Injector;
+```
+and 
+```
+        comfase: Injector {
+            @display("p=120,50;i=abstract/penguin");
+        }
+```
+4. in your **ini** file call "attackInjection.ini" by adding:
+```
+include <path to comfase>/comfase/src/comfase/attackInjection/attackInjection.ini
+```
+
+5. Compile the code to make it ready to run (build all projects in OMNeT++ IDE)
 SUFI is a sumo-based fault injector tool. The tool combines [SUMO](https://www.eclipse.org/sumo/) and [Python](https://www.python.org/). SUFI uses sumo for mobility simulation, where we define the traffic scenario and vehicle features there. Also, sumo allows us to select the car-following and lane-changing models to model the car behavior during the simulation run, thereby, evaluate these models through the fault and attack injection. Python, on the other hand, allows us to write scripts for different fault models, select fault locations and define fault durations. SUMO and Python are communicating via [TraCI](https://sumo.dlr.de/docs/TraCI.html) with each other when running the experiments.
 
 <p align="center">
