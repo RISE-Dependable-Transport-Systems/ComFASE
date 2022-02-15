@@ -25,7 +25,7 @@ git clone https://github.com/RISE-Dependable-Transport-Systems/ComFASE.git
 <br/> 
 <br/>  
 
-6. To use the **ComFASE** in the desired part of the code, you can use the below code to call it 
+6. To use **ComFASE** in the desired part of the code, you can add below code to call it 
 ```
 #include "/opt/sim/Dev2/comfase/src/comfase/attackInjection/Injector.h""
 ```
