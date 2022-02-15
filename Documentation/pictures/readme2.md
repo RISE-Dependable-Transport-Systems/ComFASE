@@ -20,6 +20,7 @@ git clone ...
 <p align="center">
   <br><br>
   <img src="https://github.com/RISE-Dependable-Transport-Systems/ComFASE/blob/main/Documentation/pictures/veins_ref.png" width="450" height="300">
+  <img src="https://github.com/RISE-Dependable-Transport-Systems/ComFASE/blob/main/Documentation/pictures/plexe_ref.png" width="450" height="300">
 </p>
 <br/> 
 <br/>  
