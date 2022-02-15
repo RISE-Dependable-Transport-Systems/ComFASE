@@ -15,7 +15,16 @@ git clone -b plexe-3.0a2 https://github.com/michele-segata/plexe.git
 git clone ...
 ```
 4. Import all the projects into the OMNeT++ IDE and follow instructions provided in [Plexe](https://plexe.car2x.org/tutorial/) to run a demo example and make sure everything is in place before integrating ComFASE.
-5. 
+5. Reference ComFASE in Veins and Plexe as below:
+
+<p align="center">
+  <br><br>
+  <img src="https://github.com/RISE-Dependable-Transport-Systems/ComFASE/blob/main/Documentation/pictures/veins ref.jpg" width="450" height="300">
+  <img src="https://github.com/RISE-Dependable-Transport-Systems/ComFASE/blob/main/Documentation/pictures/plexe ref.jpg" width="450" height="300">
+</p>
+<br/> 
+<br/> 
+
 SUFI is a sumo-based fault injector tool. The tool combines [SUMO](https://www.eclipse.org/sumo/) and [Python](https://www.python.org/). SUFI uses sumo for mobility simulation, where we define the traffic scenario and vehicle features there. Also, sumo allows us to select the car-following and lane-changing models to model the car behavior during the simulation run, thereby, evaluate these models through the fault and attack injection. Python, on the other hand, allows us to write scripts for different fault models, select fault locations and define fault durations. SUMO and Python are communicating via [TraCI](https://sumo.dlr.de/docs/TraCI.html) with each other when running the experiments.
 
 <p align="center">
