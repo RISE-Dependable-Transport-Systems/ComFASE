@@ -12,7 +12,7 @@ git clone -b plexe-3.0a2 https://github.com/michele-segata/plexe.git
 ```
 3. Download ComFASE
 ```
-git clone ...
+git clone https://github.com/RISE-Dependable-Transport-Systems/ComFASE.git
 ```
 4. Import all the projects into the OMNeT++ IDE and follow the instructions provided in [Plexe](https://plexe.car2x.org/tutorial/) to run a demo example and make sure everything is in place before integrating ComFASE.
 5. Reference ComFASE in Veins and Plexe as below:
