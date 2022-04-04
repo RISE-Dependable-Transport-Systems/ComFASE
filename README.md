@@ -10,7 +10,7 @@
 
 
 ## Installation
-Before integrating ComFASE into the simulator, it is recommended to have all the simulators running on your system. You can follow the instructions on the OMNeT++, Veins, and Plexe webpages to install them and have them ready to run. 
+Before integrating ComFASE into the simulator, it is recommended to have all the simulators running on your system. You can follow the instructions on the OMNeT++, Veins, and Plexe webpages to install them and get them ready to run. 
 
 Note: ComFASE is tested in the below-mentioned versions of the simulators:
 
