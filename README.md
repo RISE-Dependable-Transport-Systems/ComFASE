@@ -39,7 +39,8 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 </p>
 <br/> 
 <br/> 
-4. To use the **ComFASE** in the desired part of the code, you can use the below code to call it 
+
+3. To use the **ComFASE** in the desired part of the code, you can use the below code to call it 
 ```
 #include "/opt/sim/Dev2/comfase/src/comfase/attackInjection/Injector.h"
 ```
