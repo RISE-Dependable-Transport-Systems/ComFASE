@@ -30,11 +30,21 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 | *SUMO*                | is a microscopic traffic simulator                                  |
 
 ### Integrating ComFASE into the Simulators
-1. Copy the **attackInjection** folder into the "veins/src/veins" directory.
-2. To use the **injector** in the desired part of the code, you can use the below code to call it 
+1. Clone the [ComFASE](https://github.com/RISE-Dependable-Transport-Systems/ComFASE) project and import it into the OMNeT++ IDE.
+2. Reference ComFASE in Veins and Plexe as below:
+<p align="center">
+  <br><br>
+  <img src="https://github.com/RISE-Dependable-Transport-Systems/ComFASE/blob/main/Documentation/pictures/veins_ref.png" width="450" height="300">
+  <img src="https://github.com/RISE-Dependable-Transport-Systems/ComFASE/blob/main/Documentation/pictures/plexe_ref.png" width="450" height="300">
+</p>
+<br/> 
+<br/> 
+4. To use the **ComFASE** in the desired part of the code, you can use the below code to call it 
 ```
-#include "veins/attackInjection/Injector.h"
+#include "/opt/sim/Dev2/comfase/src/comfase/attackInjection/Injector.h"
 ```
+Note: the path can be different depending on your directory.
+
 for **Delay** and **DoS** attacks the following lines are added into the "channelAccess.cc" in source code of the Veins
 ```
 auto Injection = FindModule<Injector*>::findGlobalModule();
