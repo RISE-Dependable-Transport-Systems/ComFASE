@@ -17,7 +17,7 @@ Before integrating ComFASE into the simulator, it is recommended to have all the
 Note: ComFASE is tested in the below-mentioned versions of the simulators:
 
 * [OMNeT++ 5.6.2](https://omnetpp.org/software/2020/01/13/omnet-5-6-released)
-* [Veins 5.1](https://github.com/sommer/veins/releases/tag/veins-5.1)
+* [Veins 5.1](https://github.com/sommer/veins/releases/tag/veins-5.1)    ``` git clone -b veins-5.1 https://github.com/sommer/veins.git  ```
 * [Plexe 3.0a2](https://github.com/michele-segata/plexe/releases/tag/plexe-3.0a3)   ``` git clone -b plexe-3.0a2 https://github.com/michele-segata/plexe.git ```
 * [SUMO 1.8.0](https://sourceforge.net/projects/sumo/files/sumo/version%201.8.0/)
 
