@@ -62,11 +62,11 @@ auto Injection = FindModule<Injector*>::findGlobalModule();
 ```
 3. Update **ned** file of the example that you want to run by adding: 
 ``` 
-import org.car2x.veins.attackInjection.Injector;
+import comfase.comfase.attackInjection.Injector;
 ```
 and 
 ```
-        attacker: Injector {
+        comfase: Injector {
             @display("p=120,50;i=abstract/penguin");
         }
 ```
