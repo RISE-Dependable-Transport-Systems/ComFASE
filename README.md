@@ -16,7 +16,7 @@
 | *SUMO*                | is a microscopic traffic simulator                                  |
 
 
-==================================
+-----------------------
 # ComFASE Integration
 ## Option1: ComFASE in OMNeT++ IDE
 Before integrating ComFASE into the simulator, it is recommended to have all the simulators running on your system. You can follow the instructions on the OMNeT++, Veins, and Plexe webpages to install them and get them ready to run. 
@@ -85,7 +85,7 @@ include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 ## Option2: ComFASE in cmd environment
 
 
-
+-----------------------
 # ComFASE Running
 ## Option1: in OMNeT++ IDE
 Configure the attack injection scenario through updating the **attackInjection.ini** file as denoted below, and run the desired example.
