@@ -76,7 +76,7 @@ and
             @display("p=120,50;i=abstract/penguin");
         }
 ```
-4. in your **ini** file call "attackInjection.ini" by adding:
+4. Update your example **ini** file by adding "attackInjection.ini" as following:
 ```
 include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 ```
