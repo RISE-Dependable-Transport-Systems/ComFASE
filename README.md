@@ -86,7 +86,7 @@ include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 ## Option2: ComFASE in cmd environment
 # Running
 ## Option1: in OMNeT++ IDE
-Configure the attack injection scenario through the **attackInjection.ini** file and run the desired example.
+Configure the attack injection scenario through updating the **attackInjection.ini** file as denoted below, and run the desired example.
 ```
 ##########################################################
 #                       Attack Start                     #
