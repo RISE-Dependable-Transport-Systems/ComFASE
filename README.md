@@ -41,11 +41,12 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 <br/> 
 <br/> 
 
-3. To use the **ComFASE** in the desired part of the code, you can use the below code to call it 
+3. To use the **ComFASE** in the desired part of the code, add below lines to call comfase header file: 
 ```
+#include "veins/base/utils/FindModule.h"
 #include "/opt/sim/Dev2/comfase/src/comfase/attackInjection/Injector.h"
 ```
-Note: the path can be different depending on your directory.
+Note: the path to the **Injector.h** can be different depending on your directory.
 
 for **Delay** and **DoS** attacks the following lines are added into the "channelAccess.cc" in source code of the Veins
 ```
