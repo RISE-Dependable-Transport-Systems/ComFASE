@@ -29,7 +29,7 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 
 
 
-
+-------------------------------------------------------------------------------------------------
 ### Integrating ComFASE into the Simulators
 1. Clone the [ComFASE](https://github.com/RISE-Dependable-Transport-Systems/ComFASE) project and import it into the OMNeT++ IDE.
 2. Reference ComFASE in Veins and Plexe as below:
@@ -84,7 +84,8 @@ include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 5. Compile the code to make it ready to run (build all projects in OMNeT++ IDE)
 
 ## Option2: ComFASE in cmd environment
-# Running
+-------------------------------------------------------------------------------------------------
+# ComFASE Running
 ## Option1: in OMNeT++ IDE
 Configure the attack injection scenario through updating the **attackInjection.ini** file as denoted below, and run the desired example.
 ```
