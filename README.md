@@ -86,7 +86,7 @@ include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 ## Option2: ComFASE in cmd environment
 # Running
 ## Option1: in OMNeT++ IDE
-Configure the attack injection scenario trogh the attackInjection.ini file and run the desired example.
+Configure the attack injection scenario through the **attackInjection.ini** file and run the desired example.
 
 ## Option2: in cmd
 A Python script is written to run the ComFASE experiments, before running that you can define your attack injection setup such as target node (target vehicle), attack type (Delay or DoS), and target attack surface (sender, receiver or both):
