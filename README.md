@@ -46,7 +46,7 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 #include "veins/base/utils/FindModule.h"
 #include "/opt/sim/Dev2/comfase/src/comfase/attackInjection/Injector.h"
 ```
-Note: the path to the **Injector.h** can be different depending on your directory.
+Note: the path to the **Injector.h** file can be different depending on your directory.
 
 for **Delay** and **DoS** attacks the following lines are added into the "channelAccess.cc" in source code of the Veins
 ```
