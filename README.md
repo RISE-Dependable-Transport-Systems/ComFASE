@@ -8,6 +8,12 @@
 <br/> 
 <br/> 
 
+|       Simulator       |                                 Definition                        |
+| ----------------------| ----------------------------------------------------------------- |
+| *OMNeT++*             | is a modular, component-based C++ simulation library and framework|
+| *Veins*               | is a framework for running vehicular network simulations          |
+| *Plexe*               | is a cooperative driving framework extending SUMO and Veins permitting the realistic simulation of platooning|
+| *SUMO*                | is a microscopic traffic simulator                                  |
 
 # ComFASE Integration
 
@@ -22,12 +28,7 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 * [SUMO 1.8.0](https://sourceforge.net/projects/sumo/files/sumo/version%201.8.0/)
 
 
-|       Simulator       |                                 Definition                        |
-| ----------------------| ----------------------------------------------------------------- |
-| *OMNeT++*             | is a modular, component-based C++ simulation library and framework|
-| *Veins*               | is a framework for running vehicular network simulations          |
-| *Plexe*               | is a cooperative driving framework extending SUMO and Veins permitting the realistic simulation of platooning|
-| *SUMO*                | is a microscopic traffic simulator                                  |
+
 
 ### Integrating ComFASE into the Simulators
 1. Clone the [ComFASE](https://github.com/RISE-Dependable-Transport-Systems/ComFASE) project and import it into the OMNeT++ IDE.
