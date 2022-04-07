@@ -87,6 +87,59 @@ include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
 # Running
 ## Option1: in OMNeT++ IDE
 Configure the attack injection scenario through the **attackInjection.ini** file and run the desired example.
+```
+##########################################################
+#                       Attack Start                     #
+##########################################################
+*.comfase.attackStartTime 	= ${attackStartTime = 12}s
+###                      Attack End                       #
+###########################################################
+*.comfase.attackEndTime 	= ${attackEndTime = 15}s # This is not for DoS attack
+#
+##          Target Vehicle and Attack Surface             #
+###########################################################
+*.comfase.attackNode 		= 27
+*.comfase.attackActive 	= false
+*.comfase.attackOnSender 	= true
+*.comfase.attackOnReceiver = false
+#
+#
+##                     Delay Attack                       #
+###########################################################
+*.comfase.DelayAttack = true
+*.comfase.myPDValue 		= ${myPDValue = 0.5}s
+#
+#
+##                 Varying Delay Attack                   #
+###########################################################
+*.comfase.v_DelayAttack = false
+#
+#
+##                   uc2 Delay Attack                     #
+###########################################################
+*.comfase.uc2_DelayAttack = false
+*.comfase.uc2_PDValue 	   = 305s
+#
+#
+##            Denial of Service Attack                    #
+###########################################################
+*.comfase.DoSAttack = false
+*.comfase.myPDforDoS		= ${myPDforDoS = 60}s 
+#
+#
+##            Signal Jamming Attack                       #
+###########################################################
+*.comfase.SignalPowerAttack = false
+*.comfase.ReceivePowerAttack = false
+*.comfase.myPowerValue = 0.1 mW
+*.comfase.myR_PowerValue = 9 mW
+#
+#
+##            Interference Jamming Attack                 #
+###########################################################
+*.comfase.InterferenceAttack = false
+*.comfase.myInterfValue = 0.97 mW
+```
 
 ## Option2: in cmd
 A Python script is written to run the ComFASE experiments, before running that you can define your attack injection setup such as target node (target vehicle), attack type (Delay or DoS), and target attack surface (sender, receiver or both):
