@@ -113,35 +113,10 @@ Configure the attack injection scenario through updating the **attackInjection.i
 *.comfase.myPDValue 		= ${myPDValue = 0.5}s
 #
 #
-##                 Varying Delay Attack                   #
-###########################################################
-*.comfase.v_DelayAttack = false
-#
-#
-##                   uc2 Delay Attack                     #
-###########################################################
-*.comfase.uc2_DelayAttack = false
-*.comfase.uc2_PDValue 	   = 305s
-#
-#
-##            Denial of Service Attack                    #
+##                      DoS Attack                        #
 ###########################################################
 *.comfase.DoSAttack = false
 *.comfase.myPDforDoS		= ${myPDforDoS = 60}s 
-#
-#
-##            Signal Jamming Attack                       #
-###########################################################
-*.comfase.SignalPowerAttack = false
-*.comfase.ReceivePowerAttack = false
-*.comfase.myPowerValue = 0.1 mW
-*.comfase.myR_PowerValue = 9 mW
-#
-#
-##            Interference Jamming Attack                 #
-###########################################################
-*.comfase.InterferenceAttack = false
-*.comfase.myInterfValue = 0.97 mW
 ```
 
 ## Option2: in cmd
