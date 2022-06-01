@@ -50,16 +50,16 @@ Note: the path to the **Injector.h** file can be different depending on your dir
 
 for **Delay** and **DoS** attacks the following lines are added into the "channelAccess.cc" in source code of the Veins
 ```
-    auto Injection = FindModule<Injector*>::findGlobalModule();
-    if (Injection->DelayAttack){
+    auto comfase = FindModule<injectorV*>::findGlobalModule();
+    if (comfase->DelayAttack){
         std::cout<<"Delay Attack = is TRUE"<<std::endl;
         float correctValue = receiverPos.distance(senderPos) / BaseWorldUtility::speedOfLight();
-        return Injection->PropagationDelayAttack(senderModule->getId(), receiverModule->getId(), correctValue);
+        return comfase->PropagationDelayAttack(senderModule->getId(), receiverModule->getId(), correctValue);
     }
-    else if (Injection->DoSAttack){
+    else if (comfase->DoSAttack){
         std::cout<<"DoS Attack = is TRUE"<<std::endl;
         float correctValue = receiverPos.distance(senderPos) / BaseWorldUtility::speedOfLight();
-        return Injection->DenialOfServiceAttack(senderModule->getId(), receiverModule->getId(), correctValue);
+        return comfase->DenialOfServiceAttack(senderModule->getId(), receiverModule->getId(), correctValue);
     }
     else{
     // this time-point is used to calculate the distance between sending and receiving host
