@@ -68,11 +68,11 @@ for **Delay** and **DoS** attacks the following lines are added into the "channe
 ```
 3. Update **ned** file of the example that you want to run by adding: 
 ``` 
-import comfase.comfase.attackInjection.Injector;
+import comfase.comfase.injectorVeins.injectorV;
 ```
 and 
 ```
-        comfase: Injector {
+        comfase: injectorV {
             @display("p=120,50;i=abstract/penguin");
         }
 ```
