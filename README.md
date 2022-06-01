@@ -44,7 +44,7 @@ Note: ComFASE is tested in the below-mentioned versions of the simulators:
 3. To use the **ComFASE** in the desired part of the code, add below lines to call comfase header file: 
 ```
 #include "veins/base/utils/FindModule.h"
-#include "/opt/sim/Dev2/comfase/src/comfase/attackInjection/Injector.h"
+#include "<path to comfase>comfase/src/comfase/attackInjection/Injector.h"
 ```
 Note: the path to the **Injector.h** file can be different depending on your directory.
 
@@ -78,7 +78,7 @@ and
 ```
 4. Update your example **ini** file by adding "attackInjection.ini" as following:
 ```
-include <path to veins>/veins/src/veins/attackInjection/attackInjection.ini
+include <path to comfase>comfase/src/comfase/injectorVeins/injectorV.ini
 ```
 
 5. Compile the code to make it ready to run (build all projects in OMNeT++ IDE)
