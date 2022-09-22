@@ -88,13 +88,14 @@ include <path to comfase>comfase/src/comfase/injectorVeins/injectorV.ini
 Note: Step1 is suitable for working in IDE level, proceed to step2 if test automation is required (i.e., to run experiments in bulk automatically).
 ## Step2: Using ComFASE from cmd environment
 
-This optinon can be used to run test campaigns automatically. A test campaign consists of many experiments where the number of the experimnets depends on the test configuration setup such as, attack start time, attack end time, attack values vector. The test campaign can be configured by using a Python script (i.e., comfase_run.py).
+This optinon can be used to run test campaigns automatically. A test campaign consists of many experiments where the number of the experimnets depends on the test configuration setup such as, attack start time, attack end time, and attack values vector. The test campaign can be configured by using a Python script (i.e., comfase_run.py).
+
 Follow the below steps to compile ComFASE from the command line to be able to use the **comfase_run.py** for test configuration and automation.
 
 1. Go to **comfase** folder, open a cmd terminal to run ```$ ./configure``` then ```$ make -j <number of cores of your PC>```
 2. Go to **Veins** folder, open a cmd terminal to run ```$ ./configure``` then ```$ make -j <number of cores of your PC>```
 3. Go to **Plexe-Veins** folder, open a cmd terminal to run ```$ ./configure --with-veins ~/src/veins``` then ```$ make -j <number of cores of your PC>```
-4. Go to **Plexe-Veins** folder, open **run.py** and update run_neds list as ```run_neds = ['../veins/src/veins', 'src/plexe', '../comfase/src']```
+4. Go to **Plexe-Veins** folder, open **run.py** and update ***run_neds list*** as ```run_neds = ['../veins/src/veins', 'src/plexe', '../comfase/src']```
 5. Finally, go to **Plexe-Veins/examples/platooning_comfase** folder and configure the parameters in **comfase_run.py** script according to the test requirement and execute the script. 
 
 # ComFASE Execution
