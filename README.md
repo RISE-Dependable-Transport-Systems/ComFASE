@@ -89,7 +89,11 @@ Note: Step1 is suitable for working in IDE level, proceed to step2 if test autom
 ## Step2: Using ComFASE from cmd environment
 
 This optinon can be used to run test campaigns automatically. A test campaign consists of many experiments where the number of the experimnets depends on the test configuration setup such as, attack start time, attack end time, attack values vector. The test campaign can be configured by using a Python script (i.e., comfase_run.py).
+
 1. 
+2.
+3.
+4.
 
 # ComFASE Execution
 ## Option1: in OMNeT++ IDE
