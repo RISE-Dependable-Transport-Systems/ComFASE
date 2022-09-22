@@ -95,7 +95,7 @@ Follow the below steps to compile ComFASE from the command line to be able to us
 1. Go to **comfase** folder, open a cmd terminal to run ```$ ./configure``` then ```$ make -j <number of cores of your PC>```
 2. Go to **Veins** folder, open a cmd terminal to run ```$ ./configure``` then ```$ make -j <number of cores of your PC>```
 3. Go to **Plexe-Veins** folder, open a cmd terminal to run ```$ ./configure --with-veins ~/src/veins``` then ```$ make -j <number of cores of your PC>```
-4. Go to **Plexe-Veins** folder, open **run.py** and update ***run_neds*** list as ```run_neds = ['../veins/src/veins', 'src/plexe', ***'../comfase/src'***]```
+4. Go to **Plexe-Veins** folder, open **run.py** and update ***run_neds*** list as ```run_neds = ['../veins/src/veins', 'src/plexe', '../comfase/src']```
 5. Finally, go to **Plexe-Veins/examples/platooning_comfase** folder and configure the parameters in **comfase_run.py** script according to the test requirement and execute the script. 
 
 # ComFASE Execution
