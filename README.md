@@ -91,9 +91,9 @@ Note: Step1 is suitable for working in IDE level, proceed to step2 if test autom
 This optinon can be used to run test campaigns automatically. A test campaign consists of many experiments where the number of the experimnets depends on the test configuration setup such as, attack start time, attack end time, attack values vector. The test campaign can be configured by using a Python script (i.e., comfase_run.py).
 Follow the below steps to compile ComFASE from the command line to be able to use the **comfase_run.py** for test configuration and automation.
 
-1. In **comfase** folder open a cmd terminal to run ```$ ./configure.py``` then ```$ make -j(number of cores)```
-2.
-3.
+1. Go to **comfase** folder, open a cmd terminal to run ```$ ./configure``` then ```$ make -j <number of cores of your PC>```
+2. Go to **Veins** folder, open a cmd terminal to run ```$ ./configure``` then ```$ make -j <number of cores of your PC>```
+3. Go to **Plexe-Veins** folder, open a cmd terminal to run ```$ ./configure --with-veins ~/src/veins``` then ```$ make -j <number of cores of your PC>```
 4.
 
 # ComFASE Execution
