@@ -4,7 +4,7 @@
 
  <p align="center">
   <br><br>
-  <img src="https://github.com/RISE-Dependable-Transport-Systems/ComFASE/blob/main/Documentation/pictures/ComFASE_Logo_v3.png" width="350" height="200">
+  <img src="https://github.com/RISE-Dependable-Transport-Systems/ComFASE/blob/main/Documentation/pictures/ComFASE_Logo_v3.png" width="250" height="200">
 </p>
 
 <p align="center">
