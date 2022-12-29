@@ -1,0 +1,99 @@
+
+
+<configure>
+
+	<!-- ################################## Attack Model Selection ################################## -->
+	<Attack_type 
+	Delay="false"
+	DoS="false"
+	Destructive_interference="false"
+	Barrage_jamming="false"
+	Deceptive_jamming="false"
+	/>
+	
+	<!-- ################################## Traffic Scenario Selection ############################### -->
+	<Scenario_type 
+	Scenario="SinusoidalNoGui"
+	Controller="2"
+	targetVehicles="27 333"
+	/>
+		
+	<!-- ################################## Delay Attack Parameters ################################## -->
+	<Delay
+	attackInitiationStartTime="17.0" 	attackInitiationEndTime="21.9" 	attackInitiationTimeStep="0.2" 
+	attackStartValue="2.0" 		attackEndValue="3.0" 			attackValueStep="0.2" 
+	attackMinDuration="4" 			attackMaxDuration="30" 		attackDurationStep="1" 
+	attackOnSender="true" 			attackOnReceiver="true"
+	/>
+	
+	<!-- ################################## DoS Attack Parameters ################################## -->
+	<DoS
+	attackInitiationStartTime="17.0" 	attackInitiationEndTime="21.9" 	attackInitiationTimeStep="0.2" 
+	attackStartValue="2000" 		attackEndValue="2000" 			attackValueStep="2000" 
+	attackMinDuration="2000" 		attackMaxDuration="2000" 		attackDurationStep="2000" 
+	attackOnSender="true" 			attackOnReceiver="true"
+	/>
+	
+	<!-- ########################## Destructive Interference Attack Parameters ########################### -->
+	<Destructive_interference
+	attackInitiationStartTime="17.0" 	attackInitiationEndTime="21.9" 	attackInitiationTimeStep="0.2" 
+	attackStartValue="2.0" 		attackEndValue="3.0" 			attackValueStep="0.2" 
+	attackMinDuration="4" 			attackMaxDuration="30" 		attackDurationStep="1" 
+	attackOnSender="true" 			attackOnReceiver="true"
+	/>
+	
+	<!-- ############################## Barrage jamming Attack Parameters ############################## -->
+	<Barrage_jamming
+	attackInitiationStartTime="17.0" 	attackInitiationEndTime="21.9" 	attackInitiationTimeStep="0.2" 
+	attackStartValue="0" 			attackEndValue="1.0" 			attackValueStep="0.01" 
+	attackMinDuration="4" 			attackMaxDuration="30" 		attackDurationStep="1" 
+	attackOnSender="true" 			attackOnReceiver="true"
+	/>
+	
+	<!-- ############################## Deceptive Jamming Attack Parameters ############################## -->
+	<Deceptive_jamming 
+	attackInitiationStartTime="17.0" 	attackInitiationEndTime="21.9" 	attackInitiationTimeStep="0.2" 
+	attackStartValue="0.5" 		attackEndValue="1.0" 			attackValueStep="0.01" 
+	attackMinDuration="4" 			attackMaxDuration="30" 		attackDurationStep="1" 
+	attackOnSender="true" 			attackOnReceiver="true"
+	/>
+		
+</configure>
+
+
+<!-- Target Vehicles Are Set in Omnet.ini file 
+<common_parameters>
+	<attackStartTime>17.0</attackStartTime>
+	<attackEndTime>21.90</attackEndTime>
+	<timeStep>0.2</timeStep>
+
+
+
+
+</common_parameters>
+
+
+	attackInitiationStartTime="17.0" attackInitiationEndTime="21.9" attackInitiationTimeStep="0.2" 
+	attackStartValue="0.0" attackEndValue="3.0" attackValueStep="0.2" 
+	attackMinDuration="1" attackMaxDuration="30" attackDurationStep="1" 
+	attackOnSender="true" 
+	attackOnReceiver="true"
+
+
+
+
+
+
+
+
+<campaign_data>
+    <data target_sensor="min 40 50 0" start_time="25" end_time="28" noise_type="poisson" />
+    <start_time>26.0</start_time>
+    <end_time>34.0</end_time>
+    <b_factor>3.25</b_factor>
+    <noise_type>brightness</noise_type>
+    
+</campaign_data>
+-->
+
+
