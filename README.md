@@ -42,7 +42,7 @@ Clone the ComFASE repository and follow these steps to activate the tool to exec
      i.	 Open the file “run.py” \
      ii.	Add ‘../comfase/src’ in run_ned list 
 
-5.  Import following cloned folders to Omnet++ editor (omnetpp 5.2.1 must be installed beforehand), \
+5.  Import following cloned folders to Omnet++ editor (omnetpp 5.6.2 must be installed beforehand), \
      i.	  comfase \
      ii.	 plexe-veins \
      iii.	veins 
