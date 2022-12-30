@@ -55,7 +55,7 @@ Clone the ComFASE repository and follow these steps to activate the tool to exec
 
 8.  Build the **plexe** project from OMNeT++ editor
 
-9.  The configuration steps ends here and now it is possible to run the scenario from running the commands (such as  ``` ./run -u Cmdenv -c Sinusoidal -r 2  ```) from the terminal in the plexe->examples->platooning_comfase folder
+9.  The configuration steps ends here, now it is possible to run the scenario either directly from the OMNeT++ editor or from the commandline (such as  ``` ./run -u Cmdenv -c Sinusoidal -r 2  ```) from the terminal in the plexe->examples->platooning_comfase folder
 
 10. It is also possible to run the campaigns from the python scripts (comfase_run.py) in the plexe->examples->platooning_comfase folder
 
