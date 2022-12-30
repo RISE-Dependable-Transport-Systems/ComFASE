@@ -31,12 +31,12 @@ Clone the ComFASE repository and follow these steps to activate the tool to exec
  
     
 2.  Open the terminal in Veins folder and run the following commands,\
-     i.  configure \
-     ii. make -j16 (number 16 represents the number of the available cores of the system) 
+     i.  ```./configure``` \
+     ii. ```make -j16``` (number 16 represents the number of the available cores of the system) 
 
 3.  Open the terminal in plexe folder and run the following commands,\
-     i.  configure --with -veins "path to veins folder" \
-     ii. make -j16 
+     i.  ```./configure --with-veins "path to veins folder" ``` \
+     ii. ```make -j16``` 
     
 4.  Open the plexe folder, \
      i.	 Open the file “run.py” \
