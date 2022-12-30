@@ -185,4 +185,4 @@ for t in numpy.arange(17.0, 21.9, 0.2):  # This loop defines the target time to 
 ## License
 
 ## Papers
-* [ComFASE: A Tool for Evaluating the Effects of V2V Communication Faults and Attacks on Automated Vehicles](https://ieeexplore.ieee.org/document/9833738)
+* [ "ComFASE: A Tool for Evaluating the Effects of V2V Communication Faults and Attacks on Automated Vehicles," 2022 52nd Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), 2022, pp. 185-192, doi: 10.1109/DSN53405.2022.00029.](https://ieeexplore.ieee.org/document/9833738)
