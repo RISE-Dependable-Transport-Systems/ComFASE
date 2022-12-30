@@ -21,7 +21,7 @@
 
 
 
-# Activate ComFASE 
+# Activate ComFASE - Quick guide 
 Clone the ComFASE repository and follow these steps to activate the tool to execute the fault and attack injection test campaigns.
 1.  After clonning the ComFASE project in your local directory, change the path in the following files,
      i.	  BasePhyLayer.cc (in Veins)
