@@ -22,7 +22,7 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //
 #include "veins/base/utils/FindModule.h"
-#include "/opt/sim/Dev-3/comfase/src/comfase/injectorVeins/injectorV.h"
+//#include "/opt/sim/Dev-3/comfase/src/comfase/injectorVeins/injectorV.h"
 #include "veins/modules/analogueModel/SimplePathlossModel.h"
 
 #include "veins/base/messages/AirFrame_m.h"
