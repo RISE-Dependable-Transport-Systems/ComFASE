@@ -23,24 +23,24 @@
 
 # Activate ComFASE - Quick guide 
 Clone the ComFASE repository and follow these steps to activate the tool to execute the fault and attack injection test campaigns.
-1.  After clonning the ComFASE project in your local directory, change the path in the following files,
-     i.	  BasePhyLayer.cc (in Veins)
-     ii.	 ChannelAccess.cc (in Veins)
-     iii.	SignalUtils.cc (in Veins)
-     iv.	 Highway.ned (in plexe-veins->examples->platooning_comfase)
-     v.	  SimplePathlossM (in Veins)
+1.  After clonning the ComFASE project in your local directory, change the path in the following files,\
+     i.	  BasePhyLayer.cc (in Veins)\
+     ii.	 ChannelAccess.cc (in Veins)\
+     iii.	SignalUtils.cc (in Veins)\
+     iv.	 Highway.ned (in plexe-veins->examples->platooning_comfase)\
+     v.	  SimplePathlossM (in Veins)\
     
-2.  Open the terminal in Veins folder and run the following commands,
-     i.  configure 
-     ii. make -j16
+2.  Open the terminal in Veins folder and run the following commands,\
+     i.  configure \
+     ii. make -j16 \
 
-3.  Open the terminal in Plexe-veins folder and run the following commands,
-     i.  configure 
-     ii. make -j16
+3.  Open the terminal in Plexe-veins folder and run the following commands,\
+     i.  configure \
+     ii. make -j16 \
     
-4.  Open the Plexe-veins folder (i.e., manually not from the terminal)
-     i.	 Open the file “run.py”
-     ii.	Add ‘../Comfase/src’ in run_ned list
+4.  Open the Plexe-veins folder (i.e., manually not from the terminal) \
+     i.	 Open the file “run.py” \
+     ii.	Add ‘../Comfase/src’ in run_ned list \
 
 5.  Import following cloned folders to Omnet++ editor (omnetpp must be installed beforehand),
      i.	  ComFASE
@@ -57,7 +57,7 @@ Clone the ComFASE repository and follow these steps to activate the tool to exec
 
 9.  The configuration steps ends here and now its possible to run the scenario from running the commands from the terminal
 
-10. It is also possible to run the campaigns in the from the python scripts (comfaserun.py) in the platooning_comfase folder.
+10. It is also possible to run the campaigns in the from the python scripts (comfaserun.py) in the platooning_comfase folder
 
 # ComFASE Detailed Integration with unedited Veins and Plexe-veins projects
 ## Step1: Using ComFASE from OMNeT++ IDE
