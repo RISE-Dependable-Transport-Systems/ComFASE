@@ -14,7 +14,11 @@ import xml.etree.ElementTree as ET
 ##############################################################################################
 def ComFASE_experiment_run(scenario, controller, attackModelName, attackInitiationTime, endTime,
                                                  attackValue, attackOnSender, attackOnReceiver):
-    if attackModelName == "Delay":
+    if attackModelName == "Golden_run":
+        os.system(
+            './run -u Cmdenv -c %s -r %s '
+            % (scenario, controller))
+    elif attackModelName == "Delay":
         os.system(
             './run -u Cmdenv -c %s -r %s '
             '--*.comfase.delayAttack=%s '
@@ -96,7 +100,10 @@ def config(attackModelName):
     scenario = str(scenarioType.get("Scenario"))
     controller = int(scenarioType.get("Controller"))
     Ex_Nr = 0
-    if attackModelName != "DoS":
+    if attackModelName == "Golden_run":
+        ComFASE_experiment_run(scenario, controller,  attackModelName, 0, 0,
+                                                     0, 0, 0)
+    elif attackModelName != "DoS":
         for attackInitiationTime in numpy.arange(attackInitiationStartTime, attackInitiationEndTime, attackInitiationTimeStep):  # This loop defines the target time to inject attack
             attackInitiationTime = round(attackInitiationTime, 2)
             Step_number = 0 # Counts the step of the experiment
@@ -192,6 +199,10 @@ if __name__ == "__main__":
       attackModelName = "Deceptive_jamming"
       config(attackModelName)
   else:
-      print('\n\n------------------- Select an attack model in xml file')
+      config("Golden_run")
+      print('\n\n================================================================'
+            '\n================================================================\n')
+      print('Golden Run is finished!\n\n------------------- Select an attack model in xml file\n\n')
+      exit()
   # Log the fault injection campaign data
   ComFASE_compaign_data_log()

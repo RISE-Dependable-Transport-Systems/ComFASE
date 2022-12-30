@@ -19,6 +19,14 @@
 	/>
 		
 	<!-- ################################## Delay Attack Parameters ################################## -->
+	<Golden_run
+	attackInitiationStartTime="0" 	attackInitiationEndTime="0" 	attackInitiationTimeStep="0" 
+	attackStartValue="0" 		attackEndValue="0" 			attackValueStep="0" 
+	attackMinDuration="0" 			attackMaxDuration="0" 		attackDurationStep="0" 
+	attackOnSender="true" 			attackOnReceiver="true"
+	/>
+	
+	<!-- ################################## Delay Attack Parameters ################################## -->
 	<Delay
 	attackInitiationStartTime="17.0" 	attackInitiationEndTime="21.9" 	attackInitiationTimeStep="0.2" 
 	attackStartValue="2.0" 		attackEndValue="3.0" 			attackValueStep="0.2" 
