@@ -30,15 +30,15 @@ Clone the ComFASE repository and follow these steps to activate the tool to exec
   
  
     
-2.  Open the terminal in Veins folder and run the following commands,\
+2.  Open the terminal in **veins** folder and run the following commands,\
      i.  ```./configure``` \
      ii. ```make -j16``` (number 16 represents the number of the available cores of the system) 
 
-3.  Open the terminal in plexe folder and run the following commands,\
+3.  Open the terminal in **plexe** folder and run the following commands,\
      i.  ```./configure --with-veins "path to veins folder" ``` \
      ii. ```make -j16``` 
     
-4.  Open the plexe folder, \
+4.  Open the **plexe** folder, \
      i.	 Open the file “run.py” \
      ii.	Add ‘../comfase/src’ in run_ned list 
 
@@ -47,13 +47,13 @@ Clone the ComFASE repository and follow these steps to activate the tool to exec
      ii.	 plexe-veins \
      iii.	veins 
     
-6.  In the Omnet cloned projects check the references for the projects, \
-     i.	 for veins project, comfase should be referenced \
-     ii.	for plexe project, comfase and veins should be referenced
+6.  In the Omnet++ cloned projects check the references for the projects, \
+     i.	 for **veins** project, comfase should be referenced \
+     ii.	for **plexe** project, comfase and veins should be referenced
 
-7.  Build the veins project from Omnet++ editor
+7.  Build the **veins** project from Omnet++ editor
 
-8.  Build the plexe project from Omnet++ editor
+8.  Build the **plexe** project from Omnet++ editor
 
 9.  The configuration steps ends here and now it is possible to run the scenario from running the commands (such as  ``` ./run -u Cmdenv -c Sinusoidal -r 2  ```) from the terminal
 
