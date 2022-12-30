@@ -24,42 +24,42 @@
 # Activate ComFASE - Quick guide 
 Clone the ComFASE repository and follow these steps to activate the tool to execute the fault and attack injection test campaigns.
 1.  After clonning the ComFASE project in your local directory, change the path in the following files,\
-     i.	  BasePhyLayer.cc (in Veins)\
-     ii.	 ChannelAccess.cc (in Veins)\
-     iii.	SignalUtils.cc (in Veins)\
-     iv.	 Highway.ned (in plexe-veins->examples->platooning_comfase)\
-     v.	  SimplePathlossM (in Veins)
+     i.	  BasePhyLayer.cc (in veins)\
+     ii.	 ChannelAccess.cc (in veins)\
+     iii.	SignalUtils.cc (in veins)\
+     iv.	 Highway.ned (in plexe->examples->platooning_comfase)
+ 
     
 2.  Open the terminal in Veins folder and run the following commands,\
      i.  configure \
-     ii. make -j16 
+     ii. make -j16 (number 16 represents the number of the available cores of the system) 
 
-3.  Open the terminal in Plexe-veins folder and run the following commands,\
-     i.  configure \
+3.  Open the terminal in plexe folder and run the following commands,\
+     i.  configure --with -veins "path to veins folder" \
      ii. make -j16 
     
-4.  Open the Plexe-veins folder (i.e., manually not from the terminal) \
+4.  Open the plexe folder, \
      i.	 Open the file “run.py” \
-     ii.	Add ‘../Comfase/src’ in run_ned list 
+     ii.	Add ‘../comfase/src’ in run_ned list 
 
-5.  Import following cloned folders to Omnet++ editor (omnetpp must be installed beforehand), \
-     i.	  ComFASE \
-     ii.	 Plexe-veins \
-     iii.	Veins 
+5.  Import following cloned folders to Omnet++ editor (omnetpp 5.2.1 must be installed beforehand), \
+     i.	  comfase \
+     ii.	 plexe-veins \
+     iii.	veins 
     
-6.  In the Omnet editor cloned projects check if, \
-     i.	Check the referencing of each folder (i.e., Plexe-veins, Veins) \
-     ii.	The Comfase must be referenced in Veins and Comfase and Veins must be referenced in please-veins
+6.  In the Omnet cloned projects check the references for the projects, \
+     i.	 for veins project, comfase should be referenced \
+     ii.	for plexe project, comfase and veins should be referenced
 
-7.  Build the Plexe-veins project from Omnet++ editor
+7.  Build the veins project from Omnet++ editor
 
-8.  Build the Veins project from Omnet++ editor (optional step)
+8.  Build the plexe project from Omnet++ editor
 
-9.  The configuration steps ends here and now its possible to run the scenario from running the commands from the terminal
+9.  The configuration steps ends here and now it is possible to run the scenario from running the commands (such as  ``` ./run -u Cmdenv -c Sinusoidal -r 2  ```) from the terminal
 
-10. It is also possible to run the campaigns in the from the python scripts (comfaserun.py) in the platooning_comfase folder
+10. It is also possible to run the campaigns from the python scripts (comfase_run.py) in the plexe->examples->platooning_comfase folder
 
-# ComFASE Detailed Integration with unedited Veins and Plexe-veins projects
+# ComFASE Detailed Integration with unedited veins and plexe projects
 ## Step1: Using ComFASE from OMNeT++ IDE
 Before integrating ComFASE into the simulator, it is recommended to have all the simulators running on your system. You can follow the instructions on the OMNeT++, Veins, and Plexe webpages to install them and get them ready to run. 
 
