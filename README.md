@@ -42,18 +42,18 @@ Clone the ComFASE repository and follow these steps to activate the tool to exec
      i.	 Open the file “run.py” \
      ii.	Add ‘../comfase/src’ in run_ned list 
 
-5.  Import following cloned folders to Omnet++ editor (omnetpp 5.6.2 must be installed beforehand), \
+5.  Import following cloned folders to OMNeT++ editor (OMNeT++ 5.6.2 must be installed beforehand), \
      i.	  comfase \
      ii.	 plexe-veins \
      iii.	veins 
     
-6.  In the Omnet++ cloned projects check the references for the projects, \
+6.  In theOMNeT++ cloned projects check the references for the projects, \
      i.	 for **veins** project, comfase should be referenced \
      ii.	for **plexe** project, comfase and veins should be referenced
 
-7.  Build the **veins** project from Omnet++ editor
+7.  Build the **veins** project from OMNeT++ editor
 
-8.  Build the **plexe** project from Omnet++ editor
+8.  Build the **plexe** project from OMNeT++ editor
 
 9.  The configuration steps ends here and now it is possible to run the scenario from running the commands (such as  ``` ./run -u Cmdenv -c Sinusoidal -r 2  ```) from the terminal in the plexe->examples->platooning_comfase folder
 
