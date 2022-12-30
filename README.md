@@ -24,10 +24,10 @@
 # Activate ComFASE - Quick guide 
 Clone the ComFASE repository and follow these steps to activate the tool to execute the fault and attack injection test campaigns.
 1.  After clonning the ComFASE project in your local directory, change the path in the following files,\
-     i.	  BasePhyLayer.cc (in veins)\
-     ii.	 ChannelAccess.cc (in veins)\
-     iii.	SignalUtils.cc (in veins)\
-     iv.	 Highway.ned (in plexe->examples->platooning_comfase)
+     i.	  BasePhyLayer.cc ("path to comfase"/comfase/src/comfase/injectorVeins/injectorV.h)\
+     ii.	 ChannelAccess.cc ("path to comfase"/comfase/src/comfase/injectorVeins/injectorV.h)\
+     iii.	SignalUtils.cc ("path to comfase"/comfase/src/comfase/injectorVeins/injectorV.h)\
+  
  
     
 2.  Open the terminal in Veins folder and run the following commands,\
