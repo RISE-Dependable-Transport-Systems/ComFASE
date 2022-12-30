@@ -26,7 +26,7 @@ Clone the ComFASE repository and follow these steps to activate the tool to exec
 1.  After clonning the ComFASE project in your local directory, change the path in the following files,\
      i.	  BasePhyLayer.cc ("path to comfase"/comfase/src/comfase/injectorVeins/injectorV.h)\
      ii.	 ChannelAccess.cc ("path to comfase"/comfase/src/comfase/injectorVeins/injectorV.h)\
-     iii.	SignalUtils.cc ("path to comfase"/comfase/src/comfase/injectorVeins/injectorV.h)\
+     iii.	SignalUtils.cc ("path to comfase"/comfase/src/comfase/injectorVeins/injectorV.h)
   
  
     
