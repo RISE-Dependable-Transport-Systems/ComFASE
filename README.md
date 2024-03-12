@@ -186,4 +186,5 @@ for t in numpy.arange(17.0, 21.9, 0.2):  # This loop defines the target time to 
 ComFASE is an open source attack injection tool and can be used under the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). For OMNet++, Veins and Plexe-veins simulators please check their license terms and conditions. 
 ## Papers
 * [ "ComFASE: A Tool for Evaluating the Effects of V2V Communication Faults and Attacks on Automated Vehicles," 2022 52nd Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), 2022.](https://ieeexplore.ieee.org/document/9833738)
-* ["Modeling and Evaluating the Effects of Jamming Attacks on Connected Automated Road Vehicles," 2022 27th IEEE Pacific Rim International Symposium on Dependable Computing (PRDC), 2022.](https://valu3s.eu/wp-content/uploads/2022/12/paper_5_dec22.pdf)
+* ["Modeling and Evaluating the Effects of Jamming Attacks on Connected Automated Road Vehicles," 2022 27th IEEE Pacific Rim International Symposium on Dependable Computing (PRDC), 2022.](https://ieeexplore.ieee.org/abstract/document/10027837)
+* ["Simulation-based Evaluation of a Remotely Operated Road Vehicle under Transmission Delays and Denial-of-Service Attacks," 2023 28th IEEE Pacific Rim International Symposium on Dependable Computing (PRDC), 2023.](https://ieeexplore.ieee.org/abstract/document/10356514)
